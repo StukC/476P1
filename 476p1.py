@@ -61,7 +61,7 @@ class Word24Factory(AbstractFactory):
 # Singleton Registry class
 class SingletonRegistry:
     _instances = {}
-    
+    # Edge case for instance called more than twice
     @classmethod
     def get_instance(cls, factory_type):
         if cls._instances.get(factory_type, 0) < 2:
@@ -94,10 +94,10 @@ configurations = [
     "Word90",
     "Word24",
     "Word10",
+    "Word10",
     "Word00",
     "Word24",
-    "Word90",
-    "Word00"
+    "Word24"
 ]
 
 # Run tests based on configurations hard coded above
