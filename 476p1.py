@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# AbstractFactory interface
+# Abstract Factory 
 class AbstractFactory(ABC):
     @abstractmethod
     def create_panel(self):
@@ -14,7 +14,7 @@ class AbstractFactory(ABC):
     def create_textbox(self):
         pass
 
-# Concrete Factory for Word90 generation
+# Word90 generation
 class Word90Factory(AbstractFactory):
     def create_panel(self):
         return "Panel Word90"
@@ -25,7 +25,7 @@ class Word90Factory(AbstractFactory):
     def create_textbox(self):
         return "Textbox Word90"
 
-# Concrete Factory for Word00 generation
+# Word00 generation
 class Word00Factory(AbstractFactory):
     def create_panel(self):
         return "Panel Word00"
@@ -36,7 +36,7 @@ class Word00Factory(AbstractFactory):
     def create_textbox(self):
         return "Textbox Word00"
 
-# Concrete Factory for Word10 generation
+# Word10 generation
 class Word10Factory(AbstractFactory):
     def create_panel(self):
         return "Panel Word10"
@@ -47,7 +47,7 @@ class Word10Factory(AbstractFactory):
     def create_textbox(self):
         return "Textbox Word10"
 
-# Concrete Factory for Word24 generation
+# Word24 generation
 class Word24Factory(AbstractFactory):
     def create_panel(self):
         return "Panel Word24"
@@ -58,7 +58,7 @@ class Word24Factory(AbstractFactory):
     def create_textbox(self):
         return "Textbox Word24"
 
-# SingletonRegistry class
+# Singleton Registry class
 class SingletonRegistry:
     _instances = {}
     
