@@ -61,7 +61,7 @@ class Word24Factory(AbstractFactory):
 # SingletonRegistry class
 class SingletonRegistry:
     _instances = {}
-    
+    # Edge case for multiple duplicate instance call 
     @classmethod
     def get_instance(cls, factory_type):
         if cls._instances.get(factory_type, 0) < 2:
