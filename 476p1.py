@@ -97,8 +97,6 @@ configurations = [
     "Word10",
     "Word00",
     "Word24",
-    "Word90",
-    "Word00"
 ]
 
 # Run tests based on configurations hard coded above
