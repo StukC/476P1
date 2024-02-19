@@ -94,6 +94,7 @@ configurations = [
     "Word90",
     "Word24",
     "Word10",
+    "Word10",
     "Word00",
     "Word24",
     "Word90",
